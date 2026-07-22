@@ -7,10 +7,9 @@ Only the admin can see all the users data, the user for example Ella can only se
 
 <img width="973" height="789" alt="Screenshot from 2026-07-23 00-03-03" src="https://github.com/user-attachments/assets/4e8bec4e-0e40-4519-80c2-87f01e4ba7e0" />
 
-![Uploading Screenshot from 2026-07-23 00-04-02.png…]()
+<img width="987" height="791" alt="Screenshot from 2026-07-23 00-04-24" src="https://github.com/user-attachments/assets/524fe056-d18d-4cc6-87b6-e091ba0d2f1c" />
 
-
-![Uploading Screenshot from 2026-07-23 00-04-24.png…]()
+<img width="979" height="791" alt="Screenshot from 2026-07-23 00-04-02" src="https://github.com/user-attachments/assets/439ba4cd-d7a1-4708-a779-592b939c1b0a" />
 
 
 
