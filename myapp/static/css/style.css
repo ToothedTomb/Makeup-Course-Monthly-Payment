@@ -1,0 +1,22 @@
+body{
+    background-color: purple;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+button{
+    font-size: 100;
+    border-width: 12;
+    border-style:dotted;
+    border-color: purple;
+}
+input{
+    font-size: 50;
+}
+table, td, th {
+  border: 1px solid;
+  font-size: 50px;
+}
+
+table {
+  border-collapse: collapse;
+}

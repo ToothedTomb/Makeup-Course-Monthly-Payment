@@ -1,0 +1,61 @@
+{% load static %}
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/icon.png' %}">
+    <title>Makeup Course - Monthly Payment</title>
+    <style>
+        .background-image {
+            background-image: url("{% static 'images/makeup1.jpeg' %}");
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="background-image">
+    <div class="container">
+        <div class="header">
+            <h1> Your Monthly Payments</h1>
+            <div class="user-info">
+                Welcome, {{ user.username }}!
+            </div>
+        </div>     
+        {% if payments %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Payment Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for payment in payments %}
+                        <tr>
+                            <td>${{ payment.amount }}</td>
+                            <td>{{ payment.payment_date }}</td>
+                            <td class="status-{{ payment.status|lower }}">
+                                {{ payment.status }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="no-data">
+                <p>You have no due payments to pay.</p>
+            </div>
+        {% endif %}
+        </div>
+<br>
+            <a href="{% url 'logout' %}"><button>Logout</button></a>
+        
+    
+</body>
+</html>

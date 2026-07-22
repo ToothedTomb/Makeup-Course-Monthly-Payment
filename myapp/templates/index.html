@@ -1,0 +1,25 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/icon.png' %}">
+    <style>
+        .background-image {
+            background-image: url("{% static 'images/makeup1.jpeg' %}");
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
+    </style>
+    <title>Makeup Course - Monthly Payment</title>
+</head>
+
+
+<body class="background-image">
+<u><h1>Makeup Course: Monthly Payment</h1></u>
+<p>We are a makeup school that teaches women to learn makeup. The course is $100 but monthly, you pay $10.</p>
+<!--<img src="{% static 'images/makeup1.jpeg' %}" alt="Makeup Image" width="100%">
+--><br><br>
+        <a href="{% url 'login' %}"><button>Login</button></body>
+        </a>
